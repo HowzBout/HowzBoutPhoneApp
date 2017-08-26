@@ -26,9 +26,13 @@ class DataViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.dataLabel!.text = dataObject
     }
 
+    @IBOutlet weak var lblText: UILabel!
+    @IBOutlet weak var btnHungry: UIButton!
 
+    @IBAction func btnHungryClick(_ sender: UIButton) {
+        lblText.text = "I'm Hungry Button Clicked"
+    }
 }
 

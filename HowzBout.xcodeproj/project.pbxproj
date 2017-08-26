@@ -40,6 +40,7 @@
 		E353EC111F4E330D00ECD33A /* HowzBoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowzBoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E353EC151F4E330D00ECD33A /* HowzBoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowzBoutTests.swift; sourceTree = "<group>"; };
 		E353EC171F4E330D00ECD33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E353EC201F4E44B000ECD33A /* HowzBout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HowzBout.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		E353EBFB1F4E330D00ECD33A /* HowzBout */ = {
 			isa = PBXGroup;
 			children = (
+				E353EC201F4E44B000ECD33A /* HowzBout.entitlements */,
 				E353EBFC1F4E330D00ECD33A /* AppDelegate.swift */,
 				E353EBFE1F4E330D00ECD33A /* RootViewController.swift */,
 				E353EC001F4E330D00ECD33A /* DataViewController.swift */,
@@ -154,6 +156,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = BR9HD4FQN4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					E353EC101F4E330D00ECD33A = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -422,6 +429,7 @@
 				E353EC1C1F4E330D00ECD33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E353EC1D1F4E330D00ECD33A /* Build configuration list for PBXNativeTarget "HowzBoutTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +438,7 @@
 				E353EC1F1F4E330D00ECD33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
