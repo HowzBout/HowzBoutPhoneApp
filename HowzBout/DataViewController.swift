@@ -32,7 +32,7 @@ class DataViewController: UIViewController {
     @IBOutlet weak var btnHungry: UIButton!
 
     @IBAction func btnHungryClick(_ sender: UIButton) {
-        lblText.text = "I'm Hungry Button Clicked"
+        lblText.text = "I'm Hungry Button Clicked!"
     }
 }
 
