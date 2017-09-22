@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E33872761F74AEA500BCC3B3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33872751F74AEA500BCC3B3 /* Utilities.swift */; };
 		E353EBFD1F4E330D00ECD33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EBFC1F4E330D00ECD33A /* AppDelegate.swift */; };
 		E353EBFF1F4E330D00ECD33A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EBFE1F4E330D00ECD33A /* RootViewController.swift */; };
 		E353EC011F4E330D00ECD33A /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EC001F4E330D00ECD33A /* DataViewController.swift */; };
@@ -15,6 +16,7 @@
 		E353EC081F4E330D00ECD33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E353EC071F4E330D00ECD33A /* Assets.xcassets */; };
 		E353EC0B1F4E330D00ECD33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E353EC091F4E330D00ECD33A /* LaunchScreen.storyboard */; };
 		E353EC161F4E330D00ECD33A /* HowzBoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EC151F4E330D00ECD33A /* HowzBoutTests.swift */; };
+		E381CD8C1F7275A3004699E3 /* CategorySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381CD8B1F7275A3004699E3 /* CategorySelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E33872751F74AEA500BCC3B3 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E353EBF91F4E330D00ECD33A /* HowzBout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowzBout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E353EBFC1F4E330D00ECD33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E353EBFE1F4E330D00ECD33A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		E353EC151F4E330D00ECD33A /* HowzBoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowzBoutTests.swift; sourceTree = "<group>"; };
 		E353EC171F4E330D00ECD33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E353EC201F4E44B000ECD33A /* HowzBout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HowzBout.entitlements; sourceTree = "<group>"; };
+		E381CD8B1F7275A3004699E3 /* CategorySelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E33872721F74A76200BCC3B3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E353EC041F4E330D00ECD33A /* Main.storyboard */,
+				E353EC091F4E330D00ECD33A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E33872731F74A81300BCC3B3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E381CD8B1F7275A3004699E3 /* CategorySelectViewController.swift */,
+				E353EBFC1F4E330D00ECD33A /* AppDelegate.swift */,
+				E353EBFE1F4E330D00ECD33A /* RootViewController.swift */,
+				E353EC001F4E330D00ECD33A /* DataViewController.swift */,
+				E353EC021F4E330D00ECD33A /* ModelController.swift */,
+				E33872751F74AEA500BCC3B3 /* Utilities.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E33872741F74AC6100BCC3B3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E353EC071F4E330D00ECD33A /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		E353EBF01F4E330D00ECD33A = {
 			isa = PBXGroup;
 			children = (
@@ -82,14 +116,10 @@
 		E353EBFB1F4E330D00ECD33A /* HowzBout */ = {
 			isa = PBXGroup;
 			children = (
+				E33872741F74AC6100BCC3B3 /* Assets */,
+				E33872731F74A81300BCC3B3 /* Classes */,
+				E33872721F74A76200BCC3B3 /* Storyboards */,
 				E353EC201F4E44B000ECD33A /* HowzBout.entitlements */,
-				E353EBFC1F4E330D00ECD33A /* AppDelegate.swift */,
-				E353EBFE1F4E330D00ECD33A /* RootViewController.swift */,
-				E353EC001F4E330D00ECD33A /* DataViewController.swift */,
-				E353EC021F4E330D00ECD33A /* ModelController.swift */,
-				E353EC041F4E330D00ECD33A /* Main.storyboard */,
-				E353EC071F4E330D00ECD33A /* Assets.xcassets */,
-				E353EC091F4E330D00ECD33A /* LaunchScreen.storyboard */,
 				E353EC0C1F4E330D00ECD33A /* Info.plist */,
 			);
 			path = HowzBout;
@@ -149,29 +179,31 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "HowzBout, LLC";
 				TargetAttributes = {
 					E353EBF81F4E330D00ECD33A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = BR9HD4FQN4;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
 					E353EC101F4E330D00ECD33A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = BR9HD4FQN4;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E353EBF81F4E330D00ECD33A;
 					};
 				};
 			};
 			buildConfigurationList = E353EBF41F4E330D00ECD33A /* Build configuration list for PBXProject "HowzBout" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -214,10 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33872761F74AEA500BCC3B3 /* Utilities.swift in Sources */,
 				E353EBFF1F4E330D00ECD33A /* RootViewController.swift in Sources */,
 				E353EC031F4E330D00ECD33A /* ModelController.swift in Sources */,
 				E353EC011F4E330D00ECD33A /* DataViewController.swift in Sources */,
 				E353EBFD1F4E330D00ECD33A /* AppDelegate.swift in Sources */,
+				E381CD8C1F7275A3004699E3 /* CategorySelectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +303,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -277,7 +313,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -320,7 +360,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -328,7 +370,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -358,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HowzBout/HowzBout.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BR9HD4FQN4;
 				INFOPLIST_FILE = HowzBout/Info.plist;
@@ -365,7 +412,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.HowzBout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -373,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HowzBout/HowzBout.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BR9HD4FQN4;
 				INFOPLIST_FILE = HowzBout/Info.plist;
@@ -380,7 +429,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.HowzBout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -394,7 +444,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.HowzBoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HowzBout.app/HowzBout";
 			};
 			name = Debug;
@@ -409,7 +460,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.HowzBoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HowzBout.app/HowzBout";
 			};
 			name = Release;
