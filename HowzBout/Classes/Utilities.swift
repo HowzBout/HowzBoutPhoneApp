@@ -11,7 +11,5 @@ import CoreLocation
 
 class Utilities {
     
-    func PrintAddTwoIntegers(a: Int, b: Int) {
-        print(a + b)
-    }    
+   
 }

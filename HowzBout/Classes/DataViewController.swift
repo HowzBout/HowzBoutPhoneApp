@@ -80,8 +80,7 @@ class DataViewController: UIViewController, CLLocationManagerDelegate, UISearchB
     }
 
     @IBAction func btnHungryTap(_ sender: Any) {
-        let util:Utilities = Utilities()
-        util.PrintAddTwoIntegers(a: 5, b: 6)
+       
         let categorySelectionViewController = self.storyboard?.instantiateViewController(withIdentifier: "CategorySelectViewController") as! CategorySelectViewController
         categorySelectionViewController.latitude = latitude
         categorySelectionViewController.longitude = longitude
