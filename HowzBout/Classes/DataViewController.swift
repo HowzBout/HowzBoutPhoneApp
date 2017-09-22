@@ -75,9 +75,9 @@ class DataViewController: UIViewController, CLLocationManagerDelegate, UISearchB
         // Dispose of any resources that can be recreated.
     }
 
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 
     @IBAction func btnHungryTap(_ sender: Any) {
         let util:Utilities = Utilities()
