@@ -11,5 +11,13 @@ import CoreLocation
 
 class Utilities {
     
+    
    
+}
+
+struct RequestType {
+    let Post: String
+    let Get: String
+    let Put: String
+    let Delete: String
 }

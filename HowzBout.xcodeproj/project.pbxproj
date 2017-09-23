@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		177FC7C22F7D2E10DC133F43 /* Pods_HowzBout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936683D9B16C6DC70F23516D /* Pods_HowzBout.framework */; };
+		D087D9474CF830B6273BB4D6 /* Pods_HowzBoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F05CBA09E91EF80E365C37 /* Pods_HowzBoutTests.framework */; };
 		E33872761F74AEA500BCC3B3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33872751F74AEA500BCC3B3 /* Utilities.swift */; };
+		E33872781F7539C800BCC3B3 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33872771F7539C800BCC3B3 /* RestApiManager.swift */; };
 		E353EBFD1F4E330D00ECD33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EBFC1F4E330D00ECD33A /* AppDelegate.swift */; };
 		E353EBFF1F4E330D00ECD33A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EBFE1F4E330D00ECD33A /* RootViewController.swift */; };
 		E353EC011F4E330D00ECD33A /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EC001F4E330D00ECD33A /* DataViewController.swift */; };
@@ -30,7 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28A5DE2DF989AB09D4577CBA /* Pods-HowzBout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowzBout.release.xcconfig"; path = "Pods/Target Support Files/Pods-HowzBout/Pods-HowzBout.release.xcconfig"; sourceTree = "<group>"; };
+		48F05CBA09E91EF80E365C37 /* Pods_HowzBoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowzBoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5477CC8562CD3153D1F906BB /* Pods-HowzBoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowzBoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HowzBoutTests/Pods-HowzBoutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		936683D9B16C6DC70F23516D /* Pods_HowzBout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowzBout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99F0A7EE798FD78B088807BA /* Pods-HowzBoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowzBoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HowzBoutTests/Pods-HowzBoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC3B5896A1D15B3EBD8A080E /* Pods-HowzBout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowzBout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HowzBout/Pods-HowzBout.debug.xcconfig"; sourceTree = "<group>"; };
 		E33872751F74AEA500BCC3B3 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E33872771F7539C800BCC3B3 /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		E353EBF91F4E330D00ECD33A /* HowzBout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowzBout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E353EBFC1F4E330D00ECD33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E353EBFE1F4E330D00ECD33A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177FC7C22F7D2E10DC133F43 /* Pods_HowzBout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +70,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D087D9474CF830B6273BB4D6 /* Pods_HowzBoutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CAE9F101A7AEC930925C837 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC3B5896A1D15B3EBD8A080E /* Pods-HowzBout.debug.xcconfig */,
+				28A5DE2DF989AB09D4577CBA /* Pods-HowzBout.release.xcconfig */,
+				5477CC8562CD3153D1F906BB /* Pods-HowzBoutTests.debug.xcconfig */,
+				99F0A7EE798FD78B088807BA /* Pods-HowzBoutTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E33872721F74A76200BCC3B3 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,7 @@
 				E353EC001F4E330D00ECD33A /* DataViewController.swift */,
 				E353EC021F4E330D00ECD33A /* ModelController.swift */,
 				E33872751F74AEA500BCC3B3 /* Utilities.swift */,
+				E33872771F7539C800BCC3B3 /* RestApiManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -101,6 +125,8 @@
 				E353EBFB1F4E330D00ECD33A /* HowzBout */,
 				E353EC141F4E330D00ECD33A /* HowzBoutTests */,
 				E353EBFA1F4E330D00ECD33A /* Products */,
+				5CAE9F101A7AEC930925C837 /* Pods */,
+				EEA6E5A591B5E04B2421D484 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +160,15 @@
 			path = HowzBoutTests;
 			sourceTree = "<group>";
 		};
+		EEA6E5A591B5E04B2421D484 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				936683D9B16C6DC70F23516D /* Pods_HowzBout.framework */,
+				48F05CBA09E91EF80E365C37 /* Pods_HowzBoutTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E353EC1A1F4E330D00ECD33A /* Build configuration list for PBXNativeTarget "HowzBout" */;
 			buildPhases = (
+				8486805E630FE6E2A27A5061 /* [CP] Check Pods Manifest.lock */,
 				E353EBF51F4E330D00ECD33A /* Sources */,
 				E353EBF61F4E330D00ECD33A /* Frameworks */,
 				E353EBF71F4E330D00ECD33A /* Resources */,
+				5AEDA723E44308583ABCAE2F /* [CP] Embed Pods Frameworks */,
+				89785F8CCB4F8D1BE72D0D25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E353EC1D1F4E330D00ECD33A /* Build configuration list for PBXNativeTarget "HowzBoutTests" */;
 			buildPhases = (
+				A3A4D5D099E5534667E5EE53 /* [CP] Check Pods Manifest.lock */,
 				E353EC0D1F4E330D00ECD33A /* Sources */,
 				E353EC0E1F4E330D00ECD33A /* Frameworks */,
 				E353EC0F1F4E330D00ECD33A /* Resources */,
+				287573A96E792642C16215F9 /* [CP] Embed Pods Frameworks */,
+				6D8E38B2DDDCF2E62E6B30A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +282,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		287573A96E792642C16215F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HowzBoutTests/Pods-HowzBoutTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AEDA723E44308583ABCAE2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HowzBout/Pods-HowzBout-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HowzBout/Pods-HowzBout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D8E38B2DDDCF2E62E6B30A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HowzBoutTests/Pods-HowzBoutTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8486805E630FE6E2A27A5061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HowzBout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89785F8CCB4F8D1BE72D0D25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HowzBout/Pods-HowzBout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A4D5D099E5534667E5EE53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HowzBoutTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E353EBF51F4E330D00ECD33A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -251,6 +396,7 @@
 				E353EC031F4E330D00ECD33A /* ModelController.swift in Sources */,
 				E353EC011F4E330D00ECD33A /* DataViewController.swift in Sources */,
 				E353EBFD1F4E330D00ECD33A /* AppDelegate.swift in Sources */,
+				E33872781F7539C800BCC3B3 /* RestApiManager.swift in Sources */,
 				E381CD8C1F7275A3004699E3 /* CategorySelectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +548,7 @@
 		};
 		E353EC1B1F4E330D00ECD33A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC3B5896A1D15B3EBD8A080E /* Pods-HowzBout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HowzBout/HowzBout.entitlements;
@@ -419,6 +566,7 @@
 		};
 		E353EC1C1F4E330D00ECD33A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A5DE2DF989AB09D4577CBA /* Pods-HowzBout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HowzBout/HowzBout.entitlements;
@@ -436,6 +584,7 @@
 		};
 		E353EC1E1F4E330D00ECD33A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5477CC8562CD3153D1F906BB /* Pods-HowzBoutTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +601,7 @@
 		};
 		E353EC1F1F4E330D00ECD33A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F0A7EE798FD78B088807BA /* Pods-HowzBoutTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
