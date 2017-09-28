@@ -19,6 +19,7 @@
 		E353EC081F4E330D00ECD33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E353EC071F4E330D00ECD33A /* Assets.xcassets */; };
 		E353EC0B1F4E330D00ECD33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E353EC091F4E330D00ECD33A /* LaunchScreen.storyboard */; };
 		E353EC161F4E330D00ECD33A /* HowzBoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EC151F4E330D00ECD33A /* HowzBoutTests.swift */; };
+		E35E66011F765F8600E35AEE /* RecommendationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E66001F765F8600E35AEE /* RecommendationController.swift */; };
 		E381CD8C1F7275A3004699E3 /* CategorySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381CD8B1F7275A3004699E3 /* CategorySelectViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		E353EC151F4E330D00ECD33A /* HowzBoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowzBoutTests.swift; sourceTree = "<group>"; };
 		E353EC171F4E330D00ECD33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E353EC201F4E44B000ECD33A /* HowzBout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HowzBout.entitlements; sourceTree = "<group>"; };
+		E35E66001F765F8600E35AEE /* RecommendationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationController.swift; sourceTree = "<group>"; };
 		E381CD8B1F7275A3004699E3 /* CategorySelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 				E353EC021F4E330D00ECD33A /* ModelController.swift */,
 				E33872751F74AEA500BCC3B3 /* Utilities.swift */,
 				E33872771F7539C800BCC3B3 /* RestApiManager.swift */,
+				E35E66001F765F8600E35AEE /* RecommendationController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			files = (
 				E33872761F74AEA500BCC3B3 /* Utilities.swift in Sources */,
 				E353EBFF1F4E330D00ECD33A /* RootViewController.swift in Sources */,
+				E35E66011F765F8600E35AEE /* RecommendationController.swift in Sources */,
 				E353EC031F4E330D00ECD33A /* ModelController.swift in Sources */,
 				E353EC011F4E330D00ECD33A /* DataViewController.swift in Sources */,
 				E353EBFD1F4E330D00ECD33A /* AppDelegate.swift in Sources */,
@@ -593,7 +597,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.HowzBoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HowzBout.app/HowzBout";
 			};
@@ -610,7 +614,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.HowzBoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HowzBout.app/HowzBout";
 			};

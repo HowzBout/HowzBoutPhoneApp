@@ -46,9 +46,7 @@ class DataViewController: UIViewController, CLLocationManagerDelegate, UISearchB
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if (searchActive == false) {
-//             print(searchText)
-        }
+        
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -67,6 +65,15 @@ class DataViewController: UIViewController, CLLocationManagerDelegate, UISearchB
         searchActive = false;
         print(howzBoutSearchBar.text ?? "")
         howzBoutSearchBar.endEditing(true)
+        
+        if (searchActive == false) {
+            let recommendationViewController = self.storyboard?.instantiateViewController(withIdentifier: "RecommendationController") as! RecommendationController
+            recommendationViewController.latitude = String(latitude)
+            recommendationViewController.longitude = String(longitude)
+            recommendationViewController.term = searchBar.text!
+            recommendationViewController.fromSearch = true;
+        self.navigationController?.pushViewController(recommendationViewController, animated: true)
+        }
     }
 
 
