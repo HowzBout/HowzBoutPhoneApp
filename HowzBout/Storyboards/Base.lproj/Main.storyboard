@@ -111,19 +111,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kc-d2-MXA">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3Kc-d2-MXA">
                                 <rect key="frame" x="9" y="116" width="95" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="pizza"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnCategoryClick:" destination="aTS-hq-hmP" eventType="touchUpInside" id="c2C-W8-pfY"/>
-                                    <segue destination="aEu-uO-Jv9" kind="show" identifier="recommendation" id="QjD-JU-XTo"/>
+                                    <action selector="btnCategoryClick:" destination="aTS-hq-hmP" eventType="touchUpInside" id="jaF-9j-QnH"/>
+                                    <segue destination="aEu-uO-Jv9" kind="show" identifier="cat1" id="QjD-JU-XTo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Eg-Ev-aKe">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2Eg-Ev-aKe">
                                 <rect key="frame" x="271" y="116" width="95" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="pizza"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnCategoryClick:" destination="aTS-hq-hmP" eventType="touchUpInside" id="ITD-ea-7jF"/>
+                                    <segue destination="aEu-uO-Jv9" kind="show" identifier="cat3" id="rsQ-bv-hYq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1e-c2-Gqf">
                                 <rect key="frame" x="9" y="406" width="357" height="55"/>
@@ -154,10 +171,19 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEq-9l-MuT">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jEq-9l-MuT">
                                 <rect key="frame" x="140" y="116" width="95" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="pizza"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnCategoryClick:" destination="aTS-hq-hmP" eventType="touchUpInside" id="4mw-3X-8qK"/>
+                                    <segue destination="aEu-uO-Jv9" kind="show" identifier="cat2" id="kHM-x3-2gw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNB-dc-LfG">
                                 <rect key="frame" x="9" y="499" width="95" height="45"/>
@@ -282,6 +308,7 @@
                         <color key="backgroundColor" red="0.35228398440000003" green="0.68575954439999998" blue="0.80404907459999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
+                        <outlet property="btnFirstCategory" destination="3Kc-d2-MXA" id="jAY-5r-ZPx"/>
                         <outlet property="btnMileMax" destination="XvO-nk-jB3" id="IdY-L9-uBW"/>
                         <outlet property="btnMileMid" destination="utv-T7-hzC" id="Kur-ve-FVM"/>
                         <outlet property="btnMileMin" destination="oNB-dc-LfG" id="dHx-DA-4wA"/>
@@ -289,6 +316,8 @@
                         <outlet property="btnPriceOne" destination="RIX-Zb-Xa6" id="U7O-cH-oPl"/>
                         <outlet property="btnPriceThree" destination="HFq-vh-RFb" id="FNl-SU-8a7"/>
                         <outlet property="btnPriceTwo" destination="1RK-uc-rd4" id="ACS-zx-XIG"/>
+                        <outlet property="btnSecondCategory" destination="jEq-9l-MuT" id="9uJ-d7-ki4"/>
+                        <outlet property="btnThirdCategory" destination="2Eg-Ev-aKe" id="ZSF-Hr-xvp"/>
                         <outlet property="txtZipCode" destination="N0n-qA-iiQ" id="Igc-dc-XQ7"/>
                     </connections>
                 </viewController>
@@ -400,6 +429,8 @@
         <image name="Icons" width="64" height="64"/>
         <image name="Logos" width="90" height="90"/>
         <image name="Thirsty" width="64" height="64"/>
-        <image name="pizza" width="93" height="251"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rsQ-bv-hYq"/>
+    </inferredMetricsTieBreakers>
 </document>

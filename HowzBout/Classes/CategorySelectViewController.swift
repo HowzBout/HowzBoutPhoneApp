@@ -21,6 +21,9 @@ class CategorySelectViewController: UIViewController {
     @IBOutlet weak var btnPriceTwo: UIButton!
     @IBOutlet weak var btnPriceThree: UIButton!
     @IBOutlet weak var btnPriceFour: UIButton!
+    @IBOutlet weak var btnFirstCategory: UIButton!
+    @IBOutlet weak var btnSecondCategory: UIButton!
+    @IBOutlet weak var btnThirdCategory: UIButton!
     
     
     var longitude:Double = 0.0
@@ -28,6 +31,14 @@ class CategorySelectViewController: UIViewController {
     var priceLevel:Int = 0
     var distance:Int = 24140
     var postal:String = ""
+    var term = ""
+    
+    // Category Array (hard coded for now)
+    var categories: [String: String] = ["Afghan": "afghani", "African": "african", "American (New)": "newamerican", "American (Traditional)": "tradamerican", "Arabian": "arabian", "Argentine": "argentine", "Barbeque": "bbq", "Caribbean": "caribbean", "Pizza": "pizza"]
+    
+    var categoriesLookup: [String] = ["Afghan", "African", "American (New)", "American (Traditional)", "Arabian", "Argentine", "Barbeque", "Caribbean", "Pizza"]
+    
+    var selectedCat = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +51,45 @@ class CategorySelectViewController: UIViewController {
         // We will simply print out the value here
         print(longitude)
         print(latitude)
+        SetupButtons()
+    }
+    
+    func SetupButtons() {
+        let num1:UInt32 = randomNumber()
+        
+//        let num2 = randomNumber()
+//        let num3 = randomNumber()
+        var num2:UInt32
+        var num3:UInt32
+        
+        num2 = randomNumber()
+        num3 = randomNumber()
+        
+        while num2 == num3 {
+            num3 = randomNumber()
+        }
+        
+        
+        btnFirstCategory.setTitle(categoriesLookup[Int(num1)], for: UIControlState.normal)
+        btnFirstCategory.accessibilityIdentifier = categories[categoriesLookup[Int(num1)]]
+        
+        btnSecondCategory.setTitle(categoriesLookup[Int(num2)], for: UIControlState.normal)
+        btnSecondCategory.accessibilityIdentifier = categories[categoriesLookup[Int(num2)]]
+        
+        btnThirdCategory.setTitle(categoriesLookup[Int(num3)], for: UIControlState.normal)
+        btnThirdCategory.accessibilityIdentifier = categories[categoriesLookup[Int(num3)]]
+        
+    }
+    
+    var previousNumber: UInt32? // used in randomNumber()
+    
+    func randomNumber() -> UInt32 {
+        var randomNumber = arc4random_uniform(9)
+        while previousNumber == randomNumber {
+            randomNumber = arc4random_uniform(9)
+        }
+        previousNumber = randomNumber
+        return randomNumber
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,9 +97,10 @@ class CategorySelectViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func btnCategoryClick(_ sender: Any) {
-        
+    @IBAction func btnCategoryClick(_ sender: UIButton) {
+        selectedCat = sender.accessibilityIdentifier!
     }
+    
     
     @IBAction func btnMileMinClick(_ sender: Any) {
         btnMileMid.isSelected = false
@@ -108,13 +159,16 @@ class CategorySelectViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {   
         
         switch segue.identifier {
-        case "recommendation"?:
+        case "cat1"?,
+             "cat2"?,
+             "cat3"?:
             let recommendedViewController = segue.destination as! RecommendationController
             recommendedViewController.latitude = String(latitude)
             recommendedViewController.longitude = String(longitude)
             recommendedViewController.priceLevel = priceLevel
             recommendedViewController.distance = distance
             recommendedViewController.postal = postal
+            recommendedViewController.term = selectedCat
         case .none:
             break
         case .some(_):

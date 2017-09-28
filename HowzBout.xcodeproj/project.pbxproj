@@ -20,6 +20,7 @@
 		E353EC0B1F4E330D00ECD33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E353EC091F4E330D00ECD33A /* LaunchScreen.storyboard */; };
 		E353EC161F4E330D00ECD33A /* HowzBoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EC151F4E330D00ECD33A /* HowzBoutTests.swift */; };
 		E35E66011F765F8600E35AEE /* RecommendationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E66001F765F8600E35AEE /* RecommendationController.swift */; };
+		E35E66031F7D7C2C00E35AEE /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E66021F7D7C2C00E35AEE /* Categories.swift */; };
 		E381CD8C1F7275A3004699E3 /* CategorySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381CD8B1F7275A3004699E3 /* CategorySelectViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		E353EC171F4E330D00ECD33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E353EC201F4E44B000ECD33A /* HowzBout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HowzBout.entitlements; sourceTree = "<group>"; };
 		E35E66001F765F8600E35AEE /* RecommendationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationController.swift; sourceTree = "<group>"; };
+		E35E66021F7D7C2C00E35AEE /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		E381CD8B1F7275A3004699E3 /* CategorySelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				E33872751F74AEA500BCC3B3 /* Utilities.swift */,
 				E33872771F7539C800BCC3B3 /* RestApiManager.swift */,
 				E35E66001F765F8600E35AEE /* RecommendationController.swift */,
+				E35E66021F7D7C2C00E35AEE /* Categories.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				E35E66011F765F8600E35AEE /* RecommendationController.swift in Sources */,
 				E353EC031F4E330D00ECD33A /* ModelController.swift in Sources */,
 				E353EC011F4E330D00ECD33A /* DataViewController.swift in Sources */,
+				E35E66031F7D7C2C00E35AEE /* Categories.swift in Sources */,
 				E353EBFD1F4E330D00ECD33A /* AppDelegate.swift in Sources */,
 				E33872781F7539C800BCC3B3 /* RestApiManager.swift in Sources */,
 				E381CD8C1F7275A3004699E3 /* CategorySelectViewController.swift in Sources */,
