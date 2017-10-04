@@ -56,9 +56,6 @@ class CategorySelectViewController: UIViewController {
     
     func SetupButtons() {
         let num1:UInt32 = randomNumber()
-        
-//        let num2 = randomNumber()
-//        let num3 = randomNumber()
         var num2:UInt32
         var num3:UInt32
         

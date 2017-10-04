@@ -7,6 +7,7 @@ target 'HowzBout' do
 
   # Pods for HowzBout
   pod 'Alamofire', '~> 4.5'
+  pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'SwiftyJSON'
 
   target 'HowzBoutTests' do
