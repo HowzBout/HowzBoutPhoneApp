@@ -18,7 +18,7 @@ class Utilities {
         var response: DataResponse<Any>?
         var finishFlag = 0
         var json = JSON()
-        let url = "http://localhost:55175/Yelp/\(term)/\(latitude)/\(longitude)"
+        let url = "http://howzbout.us-east-2.elasticbeanstalk.com/Yelp/\(term)/\(latitude)/\(longitude)"
         Alamofire.request(url, method: .get).validate().responseJSON { (resp) -> Void in
             response = resp
             

@@ -59,9 +59,9 @@ class RecommendationController: UIViewController {
             postal = "none"
         }
         if (fromSearch == true) {
-            url = "http://localhost:55175/Yelp/search/\(term)/\(latitude)/\(longitude)"
+            url = "http://howzbout.us-east-2.elasticbeanstalk.com/Yelp/search/\(term)/\(latitude)/\(longitude)"
         } else {
-            url = "http://localhost:55175/Yelp/\(term)/\(latitude)/\(longitude)/\(priceLevel)/\(distance)/\(postal)"
+            url = "http://howzbout.us-east-2.elasticbeanstalk.com/Yelp/\(term)/\(latitude)/\(longitude)/\(priceLevel)/\(distance)/\(postal)"
         }
         print(url)
         Alamofire.request(url, method: .get).validate().responseJSON { (resp) -> Void in
